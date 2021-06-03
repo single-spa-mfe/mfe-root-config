@@ -6,11 +6,11 @@ registerApplication({
   activeWhen: ["/react"],
 });
 
-registerApplication({
-  name: "@test/mfe-angular-app",
-  app: () => System.import("@test/mfe-angular-app"),
-  activeWhen: ["/ng"],
-});
+// registerApplication({
+//   name: "@test/mfe-angular-app",
+//   app: () => System.import("@test/mfe-angular-app"),
+//   activeWhen: ["/ng"],
+// });
 
 start({
   urlRerouteOnly: true,
