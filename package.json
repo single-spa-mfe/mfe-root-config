@@ -1,12 +1,13 @@
 {
   "name": "@test/root-config",
   "scripts": {
-    "start": "webpack serve --port 9000 --env isLocal",
+    "start:dev": "webpack serve --port 9000 --env isLocal",
     "lint": "eslint src --ext js",
     "test": "cross-env BABEL_ENV=test jest --passWithNoTests",
     "format": "prettier --write .",
     "check-format": "prettier --check .",
-    "build": "webpack --mode=production"
+    "build": "webpack --mode=production",
+    "start": "node server.js"
   },
   "husky": {
     "hooks": {
@@ -40,6 +41,7 @@
   "dependencies": {
     "@types/jest": "^26.0.16",
     "@types/systemjs": "^6.1.0",
+    "express": "^4.17.1",
     "single-spa": "^5.8.2"
   }
 }
