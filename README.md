@@ -15,9 +15,24 @@ This repository is a javascript project that creates a javascript bundle that is
 [single spa documentation](https://single-spa.js.org/docs/recommended-setup#local-development)
 
 ```sh
-git clone https://github.com/react-microfrontends/root-config.git
+git clone git@github.com:single-spa-mfe/mfe-react-app.git
+cd mfe-react-app
+yarn install
+yarn start:dev --port 8500
+```
+
+```sh
+git clone git@github.com:single-spa-mfe/mfe-angular-app.git
+cd mfe-angular-app
+npm install
+npm start
+```
+
+```sh
+git clone git@github.com:single-spa-mfe/mfe-root-config.git
 cd mfe-root-config
 yarn install
-yarn start:dev
+yarn start
 open http://localhost:9000
 ```
+
