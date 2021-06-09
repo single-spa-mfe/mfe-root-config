@@ -37,7 +37,8 @@
         "react": "https://unpkg.com/react@17/umd/react.production.min.js",
         "react-dom": "https://unpkg.com/react-dom@17/umd/react-dom.production.min.js",
         "@test/root-config": "https://micro-frontend-service.netlify.app/test-root-config.js",
-        "@test/mfe-react-spa": "https://mfe-react.netlify.app/test-mfe-react-app.js",
+        "@test/mfe-react-app": "https://mfe-react.netlify.app/test-mfe-react-app.js",
+        "@test/mfe-angular-app": "https://mfe-angular-app.netlify.app/mfe-angular-app/main-es2015.js",
         "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js"
       }
     }
@@ -47,16 +48,15 @@
   <!-- Add your organization's prod import map URL to this script's src  -->
   <!-- <script type="systemjs-importmap" src="/importmap.json"></script> -->
 
-  <!-- "@test/mfe-angular-app": "//localhost:4200/main.js" -->
-
   <% if (isLocal) { %>
   <script type="systemjs-importmap">
     {
       "imports": {
         "react": "https://cdn.jsdelivr.net/npm/react@16.13.1/umd/react.development.js",
         "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@16.13.1/umd/react-dom.development.js",
-        "@test/root-config": "//localhost:9100/test-root-config.js",
-        "@test/mfe-react-spa": "//localhost:8500/test-mfe-react-app.js"
+        "@test/root-config": "//localhost:9000/test-root-config.js",
+        "@test/mfe-react-app": "//localhost:8500/test-mfe-react-app.js",
+        "@test/mfe-angular-app": "//localhost:4200/main.js"
       }
     }
   </script>
